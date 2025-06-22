@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding"
+        android:minHeight="?android:attr/listPreferredItemHeight">
+
+        <!-- Кнопка настроек в правом верхнем углу -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="@dimen/medium_margin">
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_settings"
+                android:background="#00000000"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/settings" />
+
+        </LinearLayout>
+
+        <!-- Заголовок с адаптивным размером -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textColor="@color/cyber_button_border"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:shadowColor="@color/cyber_blue"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:gravity="center" />
+
+        <!-- Подзаголовок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CYBER EDITION"
+            android:textColor="@color/cyber_bright_white"
+            android:textSize="@dimen/subtitle_text_size"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:shadowColor="@color/cyber_bright_white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:gravity="center" />
+
+        <!-- Кнопка старта -->
+        <Button
+            android:id="@+id/btnStartGame"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/start_game"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/cyber_button_text"
+            android:background="@drawable/cyber_button"
+            android:fontFamily="monospace"
+            android:elevation="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

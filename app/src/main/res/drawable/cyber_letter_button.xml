@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние для неправильных букв -->
+    <item android:state_enabled="false" android:state_selected="true">
+        <layer-list>
+            <!-- Тень -->
+            <item android:top="1dp" android:left="1dp">
+                <shape>
+                    <solid android:color="#44000000" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Основной фон -->
+            <item android:bottom="1dp" android:right="1dp">
+                <shape>
+                    <solid android:color="#FF073A" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Внутренний фон -->
+            <item android:top="2dp" android:bottom="3dp" android:left="2dp" android:right="3dp">
+                <shape>
+                    <solid android:color="#2A0A0A" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Состояние для правильных букв -->
+    <item android:state_enabled="false" android:state_activated="true">
+        <layer-list>
+            <!-- Тень -->
+            <item android:top="1dp" android:left="1dp">
+                <shape>
+                    <solid android:color="#44000000" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Основной фон -->
+            <item android:bottom="1dp" android:right="1dp">
+                <shape>
+                    <solid android:color="#00FF41" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Внутренний фон -->
+            <item android:top="2dp" android:bottom="3dp" android:left="2dp" android:right="3dp">
+                <shape>
+                    <solid android:color="#0A2A0A" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Нажатое состояние -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Тень -->
+            <item android:top="1dp" android:left="1dp">
+                <shape>
+                    <solid android:color="#44000000" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Основной фон -->
+            <item android:bottom="1dp" android:right="1dp">
+                <shape>
+                    <solid android:color="#FF00FF" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Внутренний фон -->
+            <item android:top="2dp" android:bottom="3dp" android:left="2dp" android:right="3dp">
+                <shape>
+                    <solid android:color="#3A3A3A" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Обычное состояние -->
+    <item>
+        <layer-list>
+            <!-- Тень -->
+            <item android:top="1dp" android:left="1dp">
+                <shape>
+                    <solid android:color="#44000000" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Основной фон -->
+            <item android:bottom="1dp" android:right="1dp">
+                <shape>
+                    <solid android:color="#00FFFF" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+            <!-- Внутренний фон -->
+            <item android:top="2dp" android:bottom="3dp" android:left="2dp" android:right="3dp">
+                <shape>
+                    <solid android:color="#2A2A2A" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

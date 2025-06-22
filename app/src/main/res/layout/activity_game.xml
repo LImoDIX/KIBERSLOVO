@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber_background"
+    android:padding="@dimen/screen_padding_compact">
+
+    <!-- Заголовок с кнопкой паузы -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:shadowColor="@color/cyber_bright_white"
+            android:shadowRadius="8"
+            android:text="@string/guess_word"
+            android:textColor="@color/cyber_bright_white"
+            android:textSize="@dimen/header_text_size_compact"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_pause"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/pause" />
+
+    </LinearLayout>
+
+    <!-- Виселица и слово в одной строке -->
+    <LinearLayout
+        android:id="@+id/layoutGameInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/small_margin"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35">
+
+        <!-- Виселица -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/tiny_margin"
+            android:padding="@dimen/small_padding">
+
+            <ImageView
+                android:id="@+id/ivHangman"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/hangman_0"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+        <!-- Информация о слове -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/tiny_margin"
+            android:padding="@dimen/small_padding">
+
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_ _ _ _ _"
+                android:textSize="@dimen/word_text_size_compact"
+                android:textStyle="bold"
+                android:textColor="@color/cyber_yellow"
+                android:letterSpacing="0.2"
+                android:fontFamily="monospace"
+                android:shadowColor="@color/cyber_yellow"
+                android:shadowRadius="6"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/small_margin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wrong_letters"
+                android:textSize="@dimen/tiny_text_size"
+                android:textColor="@color/cyber_bright_white"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/tvWrongLetters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/cyber_bright_white"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:shadowColor="@color/cyber_bright_white"
+                android:shadowRadius="4"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Клавиатура -->
+    <ScrollView
+        android:id="@+id/scrollKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/small_margin"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/layoutGameInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/small_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_letter"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/cyber_bright_white"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                android:fontFamily="monospace" />
+
+            <!-- Первый ряд букв -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/tiny_margin">
+
+                <Button android:id="@+id/btnА" style="@style/LetterButtonGame" android:text="А" />
+                <Button android:id="@+id/btnБ" style="@style/LetterButtonGame" android:text="Б" />
+                <Button android:id="@+id/btnВ" style="@style/LetterButtonGame" android:text="В" />
+                <Button android:id="@+id/btnГ" style="@style/LetterButtonGame" android:text="Г" />
+                <Button android:id="@+id/btnД" style="@style/LetterButtonGame" android:text="Д" />
+                <Button android:id="@+id/btnЕ" style="@style/LetterButtonGame" android:text="Е" />
+                <Button android:id="@+id/btnЖ" style="@style/LetterButtonGame" android:text="Ж" />
+                <Button android:id="@+id/btnЗ" style="@style/LetterButtonGame" android:text="З" />
+
+            </LinearLayout>
+
+            <!-- Второй ряд букв -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/tiny_margin">
+
+                <Button android:id="@+id/btnИ" style="@style/LetterButtonGame" android:text="И" />
+                <Button android:id="@+id/btnЙ" style="@style/LetterButtonGame" android:text="Й" />
+                <Button android:id="@+id/btnК" style="@style/LetterButtonGame" android:text="К" />
+                <Button android:id="@+id/btnЛ" style="@style/LetterButtonGame" android:text="Л" />
+                <Button android:id="@+id/btnМ" style="@style/LetterButtonGame" android:text="М" />
+                <Button android:id="@+id/btnН" style="@style/LetterButtonGame" android:text="Н" />
+                <Button android:id="@+id/btnО" style="@style/LetterButtonGame" android:text="О" />
+                <Button android:id="@+id/btnП" style="@style/LetterButtonGame" android:text="П" />
+
+            </LinearLayout>
+
+            <!-- Третий ряд букв -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/tiny_margin">
+
+                <Button android:id="@+id/btnР" style="@style/LetterButtonGame" android:text="Р" />
+                <Button android:id="@+id/btnС" style="@style/LetterButtonGame" android:text="С" />
+                <Button android:id="@+id/btnТ" style="@style/LetterButtonGame" android:text="Т" />
+                <Button android:id="@+id/btnУ" style="@style/LetterButtonGame" android:text="У" />
+                <Button android:id="@+id/btnФ" style="@style/LetterButtonGame" android:text="Ф" />
+                <Button android:id="@+id/btnХ" style="@style/LetterButtonGame" android:text="Х" />
+                <Button android:id="@+id/btnЦ" style="@style/LetterButtonGame" android:text="Ц" />
+                <Button android:id="@+id/btnЧ" style="@style/LetterButtonGame" android:text="Ч" />
+
+            </LinearLayout>
+
+            <!-- Четвертый ряд букв -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button android:id="@+id/btnШ" style="@style/LetterButtonGame" android:text="Ш" />
+                <Button android:id="@+id/btnЩ" style="@style/LetterButtonGame" android:text="Щ" />
+                <Button android:id="@+id/btnЬ" style="@style/LetterButtonGame" android:text="Ь" />
+                <Button android:id="@+id/btnЫ" style="@style/LetterButtonGame" android:text="Ы" />
+                <Button android:id="@+id/btnЪ" style="@style/LetterButtonGame" android:text="Ъ" />
+                <Button android:id="@+id/btnЭ" style="@style/LetterButtonGame" android:text="Э" />
+                <Button android:id="@+id/btnЮ" style="@style/LetterButtonGame" android:text="Ю" />
+                <Button android:id="@+id/btnЯ" style="@style/LetterButtonGame" android:text="Я" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

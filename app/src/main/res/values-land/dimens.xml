@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Размеры для альбомной ориентации -->
+
+    <!-- Отступы -->
+    <dimen name="screen_padding">12dp</dimen>
+    <dimen name="screen_padding_compact">6dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="tiny_margin">2dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="medium_margin">8dp</dimen>
+    <dimen name="large_margin">12dp</dimen>
+    <dimen name="extra_large_margin">16dp</dimen>
+
+    <!-- Размеры текста (меньше для альбомной ориентации) -->
+    <dimen name="header_text_size_compact">16sp</dimen>
+    <dimen name="word_text_size_compact">18sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="tiny_text_size">10sp</dimen>
+
+    <!-- Размеры для кнопок-букв (компактные для альбомной ориентации) -->
+    <dimen name="letter_button_width">42dp</dimen>
+    <dimen name="letter_button_height">44dp</dimen>
+    <dimen name="letter_button_size_compact">32dp</dimen>
+    <dimen name="letter_button_margin_compact">1dp</dimen>
+    <dimen name="letter_button_text_size_compact">14sp</dimen>
+</resources>

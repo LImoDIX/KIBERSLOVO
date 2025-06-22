@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Основание -->
+    <path
+        android:pathData="M20,180 L80,180"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M20,180 L80,180"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+
+    <!-- Вертикальная стойка -->
+    <path
+        android:pathData="M50,180 L50,20"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M50,180 L50,20"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+
+    <!-- Горизонтальная перекладина -->
+    <path
+        android:pathData="M50,20 L120,20"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M50,20 L120,20"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+
+    <!-- Веревка -->
+    <path
+        android:pathData="M120,20 L120,40"
+        android:strokeColor="#FF00FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M120,20 L120,40"
+        android:strokeColor="#44FF00FF"
+        android:strokeWidth="8"
+        android:strokeLineCap="round" />
+
+    <!-- Голова -->
+    <path
+        android:pathData="M110,50 A10,10 0 1,1 130,50 A10,10 0 1,1 110,50"
+        android:strokeColor="#FFFF00"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent" />
+    <path
+        android:pathData="M110,50 A10,10 0 1,1 130,50 A10,10 0 1,1 110,50"
+        android:strokeColor="#44FFFF00"
+        android:strokeWidth="6"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Глаза -->
+    <path
+        android:pathData="M116,47 A2,2 0 1,1 116,47"
+        android:fillColor="#00FFFF" />
+    <path
+        android:pathData="M124,47 A2,2 0 1,1 124,47"
+        android:fillColor="#00FFFF" />
+
+    <!-- Рот -->
+    <path
+        android:pathData="M116,53 L118,53 M120,53 L122,53 M124,53 L124,53"
+        android:strokeColor="#00FF41"
+        android:strokeWidth="2" />
+
+    <!-- Тело -->
+    <path
+        android:pathData="M120,60 L120,110"
+        android:strokeColor="#FF00FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M120,60 L120,110"
+        android:strokeColor="#44FF00FF"
+        android:strokeWidth="8"
+        android:strokeLineCap="round" />
+
+    <!-- Левая рука -->
+    <path
+        android:pathData="M120,75 L100,90"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M120,75 L100,90"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+
+    <!-- Правая рука -->
+    <path
+        android:pathData="M120,75 L140,90"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M120,75 L140,90"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+
+    <!-- Декоративные элементы -->
+    <path
+        android:pathData="M115,75 L125,75 M115,85 L125,85 M115,95 L125,95"
+        android:strokeColor="#00FF41"
+        android:strokeWidth="1" />
+
+</vector>

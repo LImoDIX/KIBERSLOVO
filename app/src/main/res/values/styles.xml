@@ -1,0 +1,65 @@
+<resources>
+    <!-- Основная тема в стиле киберпанк -->
+    <style name="Theme.Hangman" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/cyber_cyan</item>
+        <item name="colorPrimaryVariant">@color/cyber_blue</item>
+        <item name="colorOnPrimary">@color/cyber_dark</item>
+        <item name="colorSecondary">@color/cyber_pink</item>
+        <item name="colorSecondaryVariant">@color/cyber_purple</item>
+        <item name="colorOnSecondary">@color/cyber_dark</item>
+        <item name="android:statusBarColor">@color/cyber_dark</item>
+        <item name="android:navigationBarColor">@color/cyber_dark</item>
+        <item name="android:windowBackground">@color/cyber_dark</item>
+    </style>
+
+    <!-- Тема для Splash Screen -->
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/cyber_background</item>
+        <item name="android:statusBarColor">@color/cyber_dark</item>
+        <item name="android:navigationBarColor">@color/cyber_dark</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!-- Стиль для кнопок-букв -->
+    <style name="LetterButton">
+        <item name="android:layout_width">@dimen/letter_button_size</item>
+        <item name="android:layout_height">@dimen/letter_button_size</item>
+        <item name="android:layout_margin">@dimen/letter_button_margin</item>
+        <item name="android:background">@drawable/cyber_letter_button</item>
+        <item name="android:textColor">@color/cyber_button_text</item>
+        <item name="android:textSize">@dimen/letter_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Компактный стиль для кнопок-букв -->
+    <style name="LetterButtonCompact">
+        <item name="android:layout_width">@dimen/letter_button_size_compact</item>
+        <item name="android:layout_height">@dimen/letter_button_size_compact</item>
+        <item name="android:layout_margin">@dimen/letter_button_margin_compact</item>
+        <item name="android:background">@drawable/cyber_letter_button</item>
+        <item name="android:textColor">@color/cyber_button_text</item>
+        <item name="android:textSize">@dimen/letter_button_text_size_compact</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+    <!-- Стиль для кнопок-букв в игре (увеличенный размер) -->
+    <style name="LetterButtonGame">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/cyber_letter_button</item>
+        <item name="android:textColor">@color/cyber_button_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+</resources>
+

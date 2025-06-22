@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Карточка с результатом -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/card_margin"
+            android:padding="@dimen/card_padding">
+
+            <!-- Заголовок поражения -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СИСТЕМА НЕ ВЗЛОМАНА"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/cyber_red"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:fontFamily="monospace"
+                android:shadowColor="@color/cyber_red"
+                android:shadowRadius="10"
+                android:gravity="center" />
+
+            <!-- Виселица -->
+            <ImageView
+                android:layout_width="@dimen/hangman_result_size"
+                android:layout_height="@dimen/hangman_result_size"
+                android:src="@drawable/hangman_6"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:scaleType="fitCenter" />
+
+            <!-- Текст сочувствия -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ДОСТУП ЗАБЛОКИРОВАН"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold"
+                android:textColor="#D50000"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:fontFamily="monospace"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Попробуйте другой подход к взлому!"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/cyber_bright_white"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:gravity="center"
+                android:fontFamily="monospace" />
+
+            <!-- Правильное слово -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/cyber_edit_text"
+                android:padding="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ПРАВИЛЬНЫЙ КОД БЫЛ:"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@color/red"
+                    android:fontFamily="monospace" />
+
+                <TextView
+                    android:id="@+id/tvLoseWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/cyber_yellow"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:shadowColor="@color/cyber_yellow"
+                    android:shadowRadius="8" />
+
+            </LinearLayout>
+
+            <!-- Кнопки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPlayAgain"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="ПОВТОРИТЬ ВЗЛОМ"
+                    android:textSize="@dimen/button_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/cyber_button_text"
+                    android:background="@drawable/cyber_button"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:fontFamily="monospace"
+                    android:elevation="8dp" />
+
+                <Button
+                    android:id="@+id/btnMainMenu"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="ГЛАВНОЕ МЕНЮ"
+                    android:textSize="@dimen/button_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/cyber_button_text"
+                    android:background="@drawable/cyber_button"
+                    android:fontFamily="monospace"
+                    android:elevation="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

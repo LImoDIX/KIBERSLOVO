@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Киберпанк основание с неоновым свечением -->
+    <path
+        android:pathData="M20,180 L80,180"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+
+    <!-- Дополнительное свечение основания -->
+    <path
+        android:pathData="M20,180 L80,180"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+
+    <!-- Вертикальная стойка -->
+    <path
+        android:pathData="M50,180 L50,20"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+
+    <!-- Свечение стойки -->
+    <path
+        android:pathData="M50,180 L50,20"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+
+    <!-- Горизонтальная перекладина -->
+    <path
+        android:pathData="M50,20 L120,20"
+        android:strokeColor="#00FFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round" />
+
+    <!-- Свечение перекладины -->
+    <path
+        android:pathData="M50,20 L120,20"
+        android:strokeColor="#4400FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round" />
+
+    <!-- Киберпанк веревка -->
+    <path
+        android:pathData="M120,20 L120,40"
+        android:strokeColor="#FF00FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round" />
+
+    <!-- Свечение веревки -->
+    <path
+        android:pathData="M120,20 L120,40"
+        android:strokeColor="#44FF00FF"
+        android:strokeWidth="8"
+        android:strokeLineCap="round" />
+
+    <!-- Декоративные киберпанк элементы -->
+    <path
+        android:pathData="M25,175 L30,175 M27.5,173 L27.5,177"
+        android:strokeColor="#00FF41"
+        android:strokeWidth="2" />
+
+    <path
+        android:pathData="M70,175 L75,175 M72.5,173 L72.5,177"
+        android:strokeColor="#00FF41"
+        android:strokeWidth="2" />
+
+</vector>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Тень -->
+            <item android:top="4dp" android:left="4dp">
+                <shape>
+                    <solid android:color="#44000000" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <!-- Внешняя яркая рамка при нажатии -->
+            <item android:bottom="4dp" android:right="4dp">
+                <shape>
+                    <solid android:color="#FF00FF" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <!-- Внутренний яркий фон при нажатии -->
+            <item android:top="3dp" android:bottom="7dp" android:left="3dp" android:right="7dp">
+                <shape>
+                    <gradient
+                        android:type="linear"
+                        android:angle="90"
+                        android:startColor="#4A4A4A"
+                        android:centerColor="#3A3A3A"
+                        android:endColor="#2A2A2A" />
+                    <corners android:radius="9dp" />
+                </shape>
+            </item>
+            <!-- Внутреннее свечение при нажатии -->
+            <item android:top="2dp" android:bottom="6dp" android:left="2dp" android:right="6dp">
+                <shape>
+                    <stroke android:width="2dp" android:color="#88FF00FF" />
+                    <corners android:radius="10dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <!-- Тень -->
+            <item android:top="4dp" android:left="4dp">
+                <shape>
+                    <solid android:color="#44000000" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <!-- Внешняя яркая рамка -->
+            <item android:bottom="4dp" android:right="4dp">
+                <shape>
+                    <solid android:color="#55FF00" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+            <!-- Внутренний яркий фон -->
+            <item android:top="4dp" android:bottom="8dp" android:left="4dp" android:right="8dp">
+                <shape>
+                    <gradient
+                        android:type="linear"
+                        android:angle="90"
+                        android:startColor="#3A3A3A"
+                        android:centerColor="#2A2A2A"
+                        android:endColor="#1A1A1A" />
+                    <corners android:radius="8dp" />
+                </shape>
+            </item>
+            <!-- Внутреннее свечение -->
+            <item android:top="2dp" android:bottom="6dp" android:left="2dp" android:right="6dp">
+                <shape>
+                    <stroke android:width="2dp" android:color="#0288D1" />
+                    <corners android:radius="10dp" />
+                </shape>
+            </item>
+            <!-- Дополнительный внутренний блик -->
+            <item android:top="6dp" android:bottom="10dp" android:left="6dp" android:right="10dp">
+                <shape>
+                    <gradient
+                        android:type="linear"
+                        android:angle="90"
+                        android:startColor="#44FFFFFF"
+                        android:centerColor="#22FFFFFF"
+                        android:endColor="#00FFFFFF" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

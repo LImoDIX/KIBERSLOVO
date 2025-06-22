@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/screen_padding">
+
+    <!-- Логотип игры -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:src="@drawable/hangman_logo"
+        android:alpha="0"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:scaleType="fitCenter" />
+
+    <!-- Название игры -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="КИБЕРСЛОВО"
+        android:textSize="@dimen/splash_title_size"
+        android:textStyle="bold"
+        android:textColor="@color/cyber_bright_white"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:alpha="0"
+        android:shadowColor="@color/cyber_button_text"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+        android:fontFamily="monospace"
+        android:gravity="center" />
+
+    <!-- Подзаголовок -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CYBER EDITION 2077"
+        android:textSize="@dimen/splash_subtitle_size"
+        android:textColor="@color/cyber_bright_white"
+        android:layout_marginBottom="@dimen/extra_large_margin"
+        android:alpha="0"
+        android:shadowColor="@color/cyber_bright_white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:fontFamily="monospace"
+        android:gravity="center" />
+
+    <!-- Прогресс бар -->
+    <LinearLayout
+        android:layout_width="@dimen/progress_bar_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progress_bar_height"
+            android:progressTint="@color/cyber_bright_white"
+            android:progressBackgroundTint="@color/black"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="@dimen/medium_margin" />
+
+        <!-- Текст загрузки -->
+        <TextView
+            android:id="@+id/tvLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Инициализация системы..."
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Версия приложения -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v2077.1.0"
+        android:textSize="@dimen/tiny_text_size"
+        android:textColor="@color/cyber_bright_white"
+        android:layout_marginTop="@dimen/extra_large_margin"
+        android:fontFamily="monospace" />
+
+</LinearLayout>

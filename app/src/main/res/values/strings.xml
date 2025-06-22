@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Киберслово</string>
+    <string name="main_title">КИБЕРСЛОВО</string>
+    <string name="start_game">Начать игру</string>
+    <string name="enter_word">Введите слово</string>
+    <string name="enter_word_description">Загадайте слово для другого игрока</string>
+    <string name="word_hint">Введите слово...</string>
+    <string name="ready">Готово</string>
+    <string name="guess_word">Угадайте слово</string>
+    <string name="wrong_letters">Неправильные:</string>
+    <string name="select_letter">ВЫБЕРИТЕ БУКВУ:</string>
+    <string name="you_win">Вы выиграли!</string>
+    <string name="you_lose">Вы проиграли!</string>
+    <string name="the_word_was">Загаданное слово:</string>
+    <string name="play_again">Играть снова</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="enter_letter">Введите букву</string>
+    <string name="guess">Угадать</string>
+    <string name="settings">Настройки</string>
+    <string name="back">Назад</string>
+    <string name="pause">Пауза</string>
+    <string name="game_paused">ИГРА НА ПАУЗЕ</string>
+    <string name="continue_game">Продолжить</string>
+    <string name="audio_settings">Настройки звука</string>
+    <string name="background_music">Фоновая музыка</string>
+    <string name="sound_effects">Звуковые эффекты</string>
+    <string name="vibration">Вибрация</string>
+    <string name="language_settings">Настройки языка</string>
+    <string name="language">Язык</string>
+    <string name="enter_word_please">Пожалуйста, введите слово</string>
+    <string name="word_min_length">Слово должно содержать минимум 3 буквы</string>
+    <string name="use_letters_only">Используйте только буквы</string>
+</resources>

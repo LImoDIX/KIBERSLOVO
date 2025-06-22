@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Карточка с поздравлением -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_marginHorizontal="@dimen/card_margin"
+            android:padding="@dimen/card_padding">
+
+            <!-- Заголовок победы -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ПОБЕДА!"
+                android:textSize="@dimen/victory_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/cyber_green"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:fontFamily="monospace"
+                android:shadowColor="@color/cyber_green"
+                android:shadowRadius="12"
+                android:gravity="center" />
+
+            <!-- Трофей -->
+            <ImageView
+                android:layout_width="@dimen/trophy_size"
+                android:layout_height="@dimen/trophy_size"
+                android:src="@drawable/ic_trophy"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:scaleType="fitCenter" />
+
+            <!-- Поздравительный текст -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="СИСТЕМА ВЗЛОМАНА!"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/cyber_green"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:fontFamily="monospace"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вы успешно декодировали слово!"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/cyber_green"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:gravity="center"
+                android:fontFamily="monospace" />
+
+            <!-- Угаданное слово -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/large_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ДЕКОДИРОВАННОЕ СЛОВО:"
+                    android:textSize="@dimen/small_text_size"
+                    android:textColor="@color/cyber_green"
+                    android:fontFamily="monospace" />
+
+                <TextView
+                    android:id="@+id/tvWinWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/cyber_bright_white"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:shadowColor="@color/cyber_bright_white"
+                    android:shadowRadius="8" />
+
+            </LinearLayout>
+
+            <!-- Кнопки -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPlayAgain"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="НОВАЯ МИССИЯ"
+                    android:textSize="@dimen/button_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/cyber_button_text"
+                    android:background="@drawable/cyber_button"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:fontFamily="monospace"
+                    android:elevation="8dp" />
+
+                <Button
+                    android:id="@+id/btnMainMenu"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="ГЛАВНОЕ МЕНЮ"
+                    android:textSize="@dimen/button_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/cyber_button_text"
+                    android:background="@drawable/cyber_button"
+                    android:fontFamily="monospace"
+                    android:elevation="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
